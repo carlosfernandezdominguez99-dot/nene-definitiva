@@ -15,6 +15,11 @@ window.NB = {
   booking: "https://clientes.iabeauty.ai/peluqueria/69a5ecde0d3faa74a1a619bf",
   instagram: "https://instagram.com/nenebarber7",
 
+  /* WhatsApp: número con prefijo de país, sin espacios ni "+" (ej. "34600000000").
+     Mientras esté vacío, el botón se muestra pero no hace nada. */
+  whatsapp: "",
+  whatsappText: "Hola, quería información sobre NENEBARBER7",
+
   /* -----------------------------------------------------------------------
      PRÓXIMAS FORMACIONES
      - example: true  → se muestra la etiqueta "Contenido de ejemplo".

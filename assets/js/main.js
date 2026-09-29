@@ -22,6 +22,20 @@
   /* ---------------------------------------------------------------- Enlace de reserva centralizado */
   if (NB.booking) $$("[data-book]").forEach(function (a) { a.href = NB.booking; });
 
+  /* ---------------------------------------------------------------- WhatsApp */
+  (function () {
+    var wa = $("#wa");
+    if (!wa) return;
+    if (NB.whatsapp) {
+      wa.href = "https://wa.me/" + NB.whatsapp + (NB.whatsappText ? "?text=" + encodeURIComponent(NB.whatsappText) : "");
+      wa.target = "_blank"; wa.rel = "noopener";
+      wa.classList.remove("is-disabled");
+      wa.setAttribute("aria-label", "Escribir por WhatsApp");
+    } else {
+      wa.addEventListener("click", function (e) { e.preventDefault(); });
+    }
+  })();
+
   /* ---------------------------------------------------------------- Gate (acceso privado) */
   (function () {
     var gate = $("#gate");
