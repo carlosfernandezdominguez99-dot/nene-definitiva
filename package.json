@@ -2,8 +2,8 @@
   "name": "nene-barber",
   "version": "1.0.0",
   "private": true,
-  "description": "NENEBARBER7 — web de marca (Aracena, Huelva)",
+  "description": "NENEBARBER7 \u2014 web de marca (Aracena, Huelva)",
   "scripts": {
-    "dev": "node server.js"
+    "dev": "node tools/servidor-local.js"
   }
 }

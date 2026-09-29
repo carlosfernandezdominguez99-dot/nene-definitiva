@@ -6,7 +6,7 @@ Sitio estático: HTML + CSS + JS, sin frameworks ni build step. Se despliega tal
 ## Ver en local
 
 ```
-node server.js
+npm run dev
 ```
 
 Abre `http://localhost:4500`. La contraseña de la vista previa privada es la misma de antes.
@@ -24,6 +24,7 @@ assets/js/main.js       → interacciones (reveals, scroll horizontal, contadore
 assets/img/             → fotografía optimizada (WebP, 800 y 1600 px), logo en SVG (sprite.svg)
 assets/video/           → clips cortos, sin audio, en bucle
 sitemap.xml, robots.txt, vercel.json, favicon.svg
+tools/servidor-local.js → servidor para ver la web en local (no se usa en Vercel)
 ```
 
 ## Qué se edita y dónde
