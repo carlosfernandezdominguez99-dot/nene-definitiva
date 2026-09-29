@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NENEBARBER7 — Barbero, formador y jurado · Aracena, Huelva</title>
+<meta name="description" content="NENEBARBER7: barbería y formación en Aracena (Huelva). Cortes con técnica y criterio, una experiencia completa en el salón y formaciones para profesionales y para quien empieza. Reserva tu cita online.">
+<link rel="canonical" href="https://nene-barber.vercel.app/">
+<meta name="theme-color" content="#0b0b0c">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="NENEBARBER7">
+<meta property="og:title" content="NENEBARBER7 — No es solo un corte. Es una experiencia.">
+<meta property="og:description" content="Barbero, formador y jurado. Técnica, criterio y una experiencia completa en el salón. Más de 400 profesionales formados.">
+<meta property="og:url" content="https://nene-barber.vercel.app/">
+<meta property="og:image" content="https://nene-barber.vercel.app/assets/img/og-nenebarber7.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Geist:wght@300..600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+<link rel="preload" as="image" href="assets/img/hero-espejo.webp" imagesrcset="assets/img/hero-espejo-sm.webp 800w, assets/img/hero-espejo.webp 1600w" imagesizes="100vw" fetchpriority="high">
+<link rel="stylesheet" href="assets/css/main.css">
+
+<script>
+  document.documentElement.classList.add("js");
+  try { if (localStorage.getItem("nb_gate_ok") === "1") document.documentElement.classList.add("gate-ok"); } catch (e) {}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HairSalon",
+  "name": "NENEBARBER7",
+  "description": "Barbería y formación. Cortes con técnica y criterio y formaciones para profesionales y personas que se inician.",
+  "url": "https://nene-barber.vercel.app/",
+  "image": "https://nene-barber.vercel.app/assets/img/og-nenebarber7.jpg",
+  "logo": "https://nene-barber.vercel.app/favicon.svg",
+  "address": { "@type": "PostalAddress", "addressLocality": "Aracena", "addressRegion": "Huelva", "addressCountry": "ES" },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "14:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "16:00", "closes": "20:00" }
+  ],
+  "sameAs": ["https://instagram.com/nenebarber7"],
+  "potentialAction": {
+    "@type": "ReserveAction",
+    "target": "https://clientes.iabeauty.ai/peluqueria/69a5ecde0d3faa74a1a619bf"
+  }
+}
+</script>
+</head>
+<body data-theme="dark">
+
+<!-- ================= ACCESO PRIVADO (se desactiva en assets/js/content.js → gate.enabled) ================= -->
+<div class="gate" id="gate" role="dialog" aria-modal="true" aria-label="Acceso privado" hidden>
+  <div class="gate-inner">
+    <svg aria-hidden="true"><use href="assets/img/sprite.svg#firma"></use></svg>
+    <p class="mono" style="opacity:.6">Vista previa privada</p>
+    <form id="gate-form" autocomplete="off">
+      <label for="gate-input" class="sr-only">Contraseña</label>
+      <input type="password" id="gate-input" placeholder="CONTRASEÑA" autocomplete="off">
+      <button type="submit">Entrar</button>
+    </form>
+    <p class="gate-error">Contraseña incorrecta</p>
+  </div>
+</div>
+
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#inicio" class="nav-logo" aria-label="NENEBARBER7 — inicio">
+      <svg aria-hidden="true"><use href="assets/img/sprite.svg#firma"></use></svg>
+      <span>NENEBARBER7</span>
+    </a>
+    <nav class="nav-links" aria-label="Navegación principal">
+      <a href="#nene">Nene</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#trayectoria">Trayectoria</a>
+      <a href="#formacion">Formación</a>
+      <a href="#trabajos">Trabajos</a>
+      <a href="#equipo">Equipo</a>
+      <a href="#contacto">Contacto</a>
+      <a class="btn btn--sm" href="https://clientes.iabeauty.ai/peluqueria/69a5ecde0d3faa74a1a619bf" target="_blank" rel="noopener" data-book>Reservar cita
+        <svg class="arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></a>
+    </nav>
+    <button class="nav-burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <nav aria-label="Menú móvil">
+    <a href="#nene" data-close><small>01</small>Nene</a>
+    <a href="#experiencia" data-close><small>02</small>Experiencia</a>
+    <a href="#trayectoria" data-close><small>03</small>Trayectoria</a>
+    <a href="#formacion" data-close><small>04</small>Formación</a>
+    <a href="#proximas-formaciones" data-close><small>05</small>Próximas</a>
+    <a href="#trabajos" data-close><small>06</small>Trabajos</a>
+    <a href="#equipo" data-close><small>07</small>Equipo</a>
+    <a href="#contacto" data-close><small>08</small>Contacto</a>
+  </nav>
+  <div class="menu-foot">
+    <a class="btn" href="https://clientes.iabeauty.ai/peluqueria/69a5ecde0d3faa74a1a619bf" target="_blank" rel="noopener" data-book>Reservar cita
+      <svg class="arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></a>
+    <span class="mono">Lun—Vie · 09:00—14:00 · 16:00—20:00</span>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ================================================================= 00 · HERO -->
+<section class="hero" id="inicio" data-theme-section="dark" aria-label="NENEBARBER7">
+  <div class="hero-media">
+    <figure class="media grain">
+      <img src="assets/img/hero-espejo.webp" srcset="assets/img/hero-espejo-sm.webp 800w, assets/img/hero-espejo.webp 1600w" sizes="100vw"
+           alt="Nene cortando el pelo a un cliente, reflejado en el espejo del salón" width="1600" height="2400" fetchpriority="high" data-parallax="0.18">
+    </figure>
+  </div>
+
+  <div class="hero-top">
+    <div class="hero-roles" data-hero style="--d:.9s">
+      <span>Barbero</span><span>Formador</span><span>Jurado</span>
+    </div>
+    <div class="hero-firma" aria-hidden="true">
+      <svg class="firma-draw" viewBox="22 2 380 182"><use href="assets/img/sprite.svg#firma"></use></svg>
+    </div>
+  </div>
+
+  <div class="hero-inner">
+    <h1 class="hero-title display" aria-label="NENEBARBER7">
+      <span class="clip" aria-hidden="true"><span class="ch" style="--i:0">N</span><span class="ch" style="--i:1">E</span><span class="ch" style="--i:2">N</span><span class="ch" style="--i:3">E</span><span class="ch" style="--i:4">B</span><span class="ch" style="--i:5">A</span><span class="ch" style="--i:6">R</span><span class="ch" style="--i:7">B</span><span class="ch" style="--i:8">E</span><span class="ch" style="--i:9">R</span><span class="ch seven" style="--i:10">7</span></span>
+    </h1>
+    <div class="hero-bottom">
+      <p class="hero-claim" data-hero style="--d:1.1s">Técnica que se ve.<br><em class="serif">Una experiencia que se siente.</em></p>
+      <div class="hero-ctas" data-hero style="--d:1.25s">
+        <a class="btn" href="https://clientes.iabeauty.ai/peluqueria/69a5ecde0d3faa74a1a619bf" target="_blank" rel="noopener" data-book>Reservar cita
+          <svg class="arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></a>
+        <a class="btn btn--ghost" href="#formacion">Ver formaciones</a>
+      </div>
+    </div>
+    <div class="hero-meta" data-hero style="--d:1.4s">
+      <span><b>Aracena</b> · Huelva</span>
+      <span>Lun—Vie <b>09:00—14:00</b> · <b>16:00—20:00</b></span>
+      <span>+400 profesionales formados</span>
+    </div>
+  </div>
+  <div class="scroll-cue" aria-hidden="true">SCROLL <i></i></div>
+</section>
+
+<!-- ================================================================= 01 · MARCA -->
+<section class="section" id="nene" data-theme-section="light">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-reveal>01 — Quién es NENEBARBER7</span>
+    </div>
+    <div class="marca-grid">
+      <p class="marca-statement" data-split>Una persona cercana detrás de un profesional que entiende la barbería <span class="serif accent">desde la técnica.</span></p>
+
+      <figure class="marca-photo media" data-img>
+        <img src="assets/img/nene-perfil-sm.webp" srcset="assets/img/nene-perfil-sm.webp 800w, assets/img/nene-perfil.webp 1600w" sizes="(max-width: 899px) 70vw, 40vw"
+             alt="Nene trabajando con peine y tijera sobre un cliente" loading="lazy" decoding="async" width="800" height="1200" data-parallax="0.08">
+      </figure>
+
+      <div class="marca-copy">
+        <p class="lead" data-reveal>NENEBARBER7 es Nene. El mismo que empezó cortando el pelo a sus amigos y el que hoy forma a otros profesionales, se sienta en la mesa del jurado y lidera su propio salón con equipo.</p>
+        <p class="body-copy" data-reveal style="--d:.1s">Conocimiento, experiencia y una forma muy técnica de entender el oficio. Pero antes que todo eso, <strong>un trato cercano</strong>: escuchar, explicar y hacer que cada persona se sienta en su sitio desde que entra.</p>
+
+        <ul class="roles" data-reveal style="--d:.15s">
+          <li><span class="r-name">Barbero</span><span class="r-idx">01</span></li>
+          <li><span class="r-name">Profesional técnico</span><span class="r-idx">02</span></li>
+          <li><span class="r-name">Formador</span><span class="r-idx">03</span></li>
+          <li><span class="r-name">Jurado</span><span class="r-idx">04</span></li>
+          <li><span class="r-name">Empresario</span><span class="r-idx">05</span></li>
+        </ul>
+
+        <figure class="marca-small media" data-img>
+          <img src="assets/img/nene-silla-sm.webp" srcset="assets/img/nene-silla-sm.webp 800w, assets/img/nene-silla.webp 1600w" sizes="(max-width: 899px) 40vw, 24vw"
+               alt="Nene sentado en el sillón de barbero de su salón, fotografiándose en el espejo" loading="lazy" decoding="async" width="800" height="1067">
+        </figure>
+        <div class="marca-firma" data-reveal aria-hidden="true">
+          <svg viewBox="22 2 380 182"><use href="assets/img/sprite.svg#firma"></use></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================= 02 · EXPERIENCIA (scroll horizontal) -->
+<section class="hs exp" id="experiencia" data-theme-section="dark" data-hs aria-labelledby="exp-title">
+  <div class="hs-sticky">
+    <div class="hs-track">
+      <div class="exp-intro">
+        <span class="eyebrow">02 — La experiencia</span>
+        <h2 class="display" id="exp-title">No es solo un corte.<span class="serif">Es una experiencia.</span></h2>
+        <p class="body-copy">Cuando entras en el salón, los problemas se quedan fuera durante un rato. Ambiente, música, aroma, limpieza, orden, herramientas y atención: todo está pensado para que lo disfrutes.</p>
+        <span class="mono" style="color:var(--muted)">Desliza →</span>
+      </div>
+
+      <article class="exp-panel">
+        <figure class="media"><img src="assets/img/sala-cliente-sm.webp" alt="Cliente en el sillón del salón, con paredes de chapa, espejo y plantas" loading="lazy" decoding="async" width="800" height="1067"></figure>
+        <div class="exp-sense"><h3>Vista</h3><span class="mono">01</span></div>
+        <ul class="exp-tags"><li>Ambiente</li><li>Limpieza</li><li>Orden</li></ul>
+        <p>Un espacio cuidado al detalle, limpio y organizado, con una estética propia. Es lo primero que se nota al entrar.</p>
+      </article>
+
+      <article class="exp-panel">
+        <figure class="media"><img src="assets/img/nene-silla-sm.webp" alt="Ambiente relajado en el salón, con música en la pantalla del fondo" loading="lazy" decoding="async" width="800" height="1067"></figure>
+        <div class="exp-sense"><h3>Oído</h3><span class="mono">02</span></div>
+        <ul class="exp-tags"><li>Música</li><li>Ambiente</li></ul>
+        <p>La música marca el ritmo del salón. Un ambiente relajado para que el tiempo pase a otra velocidad.</p>
+      </article>
+
+      <article class="exp-panel">
+        <figure class="media"><img src="assets/img/sala-luz-sm.webp" alt="Sala del salón con sillones, iluminación y pared de chapa" loading="lazy" decoding="async" width="800" height="1200"></figure>
+        <div class="exp-sense"><h3>Olfato</h3><span class="mono">03</span></div>
+        <ul class="exp-tags"><li>Aroma</li><li>Limpieza</li></ul>
+        <p>El aroma también forma parte de la visita. Un detalle que se percibe en cuanto cruzas la puerta.</p>
+      </article>
+
+      <article class="exp-panel">
+        <figure class="media"><img src="assets/img/carro-herramientas-sm.webp" alt="Carro de trabajo con máquinas, peines, tijeras y cuchillas ordenados" loading="lazy" decoding="async" width="800" height="1067"></figure>
+        <div class="exp-sense"><h3>Tacto</h3><span class="mono">04</span></div>
+        <ul class="exp-tags"><li>Herramientas</li><li>Organización</li></ul>
+        <p>Herramientas cuidadas y preparadas, cada una en su sitio. La precisión empieza antes del primer corte.</p>
+      </article>
+
+      <article class="exp-panel">
+        <figure class="media"><img src="assets/img/nene-fearless-sm.webp" alt="Nene concentrado mientras trabaja la barba de un cliente" loading="lazy" decoding="async" width="800" height="1200"></figure>
+        <div class="exp-sense"><h3>Atención</h3><span class="mono">05</span></div>
+        <ul class="exp-tags"><li>Escucha</li><li>Cercanía</li><li>Tiempo</li></ul>
+        <p>El sentido que lo une todo: escuchar, entender lo que buscas y dedicarle a tu corte el tiempo que merece.</p>
+      </article>
+
+      <div class="exp-end">
+        <h3 class="display">Ven a vivirla.</h3>
+        <p class="body-copy">Reserva online en menos de un minuto. Las citas son con NENEBARBER7.</p>
+        <div><a class="btn" href="https://clientes.iabeauty.ai/peluqueria/69a5ecde0d3faa74a1a619bf" target="_blank" rel="noopener" data-book>Reservar cita
+          <svg class="arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></a></div>
+        <div class="horario-mini"><span>Lunes a viernes</span><b>09:00 — 14:00 · 16:00 — 20:00</b></div>
+      </div>
+    </div>
+    <div class="hs-progress" aria-hidden="true"><i></i></div>
+  </div>
+</section>
+
+<!-- ================================================================= 03 · TRAYECTORIA (timeline horizontal) -->
+<section class="hs tray" id="trayectoria" data-theme-section="light" data-hs aria-labelledby="tray-title">
+  <div class="hs-sticky">
+    <div class="hs-track">
+      <div class="tray-intro">
+        <span class="eyebrow" style="grid-column:1/-1">03 — Trayectoria</span>
+        <h2 class="display" id="tray-title">De cortar a los amigos a liderar un equipo.</h2>
+        <figure class="media"><img src="assets/img/nuca-iam-sm.webp" alt="Nuca de Nene con el tatuaje «I am > I was» bajo la gorra" loading="lazy" decoding="async" width="800" height="1200"></figure>
+        <p class="tray-quote">I AM &gt; I WAS<small>Lo que soy hoy es más grande que lo que fui. Años de trabajo, paso a paso.</small></p>
+      </div>
+
+      <div class="tray-line">
+        <article class="tray-item">
+          <span class="tray-dot"></span>
+          <span class="tray-year is-word">Los inicios</span>
+          <h3>Cortes caseros a los amigos.</h3>
+          <p>Sin salón y sin nombre: solo ganas de aprender y de hacerlo cada vez mejor.</p>
+        </article>
+        <article class="tray-item">
+          <span class="tray-dot"></span>
+          <span class="tray-year">2017</span>
+          <h3>Entra en una peluquería de caballero.</h3>
+          <p>El primer paso profesional dentro del oficio.</p>
+        </article>
+        <article class="tray-item">
+          <span class="tray-dot"></span>
+          <span class="tray-year">2018</span>
+          <h3>Monta su primera barbería.</h3>
+          <figure class="media"><img src="assets/img/primera-barberia-sm.webp" alt="Interior de la primera barbería de Nene, con el cartel de NENE BARBER 7" loading="lazy" decoding="async" width="800" height="1067"></figure>
+        </article>
+        <article class="tray-item">
+          <span class="tray-dot"></span>
+          <span class="tray-year is-word">El salto</span>
+          <h3>Un espacio mayor para seguir creciendo.</h3>
+          <p>Más sitio, más sillas y más proyectos: el negocio empieza a crecer con equipo.</p>
+        </article>
+        <article class="tray-item">
+          <span class="tray-dot"></span>
+          <span class="tray-year">24—25</span>
+          <h3>Llega el salón actual.</h3>
+          <figure class="media is-video">
+            <video muted loop playsinline preload="none" poster="assets/img/poster-obra-local.jpg" data-autoplay aria-label="Vídeo del local vacío antes de convertirse en salón">
+              <source src="assets/video/obra-local.mp4" type="video/mp4">
+            </video>
+          </figure>
+          <p class="cap" style="margin:0">Antes de ser salón</p>
+        </article>
+        <article class="tray-item is-now">
+          <span class="tray-dot"></span>
+          <span class="tray-year is-word">Hoy</span>
+          <h3>Un equipo de cinco profesionales.</h3>
+          <p>Salón propio, formaciones, jurado en competiciones y años de desarrollo profesional a sus espaldas.</p>
+        </article>
+      </div>
+    </div>
+    <div class="hs-progress" aria-hidden="true"><i></i></div>
+  </div>
+</section>
+
+<!-- ================================================================= 04 · PREMIOS Y RECONOCIMIENTOS -->
+<section class="section" id="reconocimientos" data-theme-section="dark">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-reveal>04 — Premios y reconocimientos</span>
+      <h2 class="display h-lg" data-split>Resultados en competición.</h2>
+    </div>
+
+    <div class="podium">
+      <article class="pod" data-reveal>
+        <div class="pod-num"><span data-count="2">2</span><sup>º</sup></div>
+        <h3 class="pod-city">Granada</h3>
+        <p class="pod-title">Subcampeón</p>
+      </article>
+      <article class="pod" data-reveal style="--d:.1s">
+        <div class="pod-num"><span data-count="3">3</span><sup>º</sup></div>
+        <h3 class="pod-city">Cádiz</h3>
+        <p class="pod-title">Tercer puesto</p>
+      </article>
+      <article class="pod" data-reveal style="--d:.2s">
+        <div class="pod-num"><span data-count="2">2</span><sup>º</sup></div>
+        <h3 class="pod-city">Sevilla</h3>
+        <p class="pod-title">Subcampeón</p>
+      </article>
+    </div>
+
+    <ul class="also" data-reveal>
+      <li><span class="mono accent">+</span>Jurado en batallas de barbería</li>
+      <li><span class="mono accent">+</span>Formador de academias</li>
+      <li><span class="mono accent">+</span>Eventos solidarios</li>
+      <li><span class="mono accent">+</span>Colaboraciones con marcas</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================================================================= 05 · FORMACIÓN -->
+<section class="section" id="formacion" data-theme-section="light">
+  <div class="wrap">
+    <div class="section-head"><span class="eyebrow" data-reveal>05 — Formación</span></div>
+
+    <div class="form-hero">
+      <p class="form-big" aria-hidden="true"><span class="plus">+</span><span data-count="400">400</span></p>
+      <div class="form-big-l">
+        <h2 class="display" data-split>Profesionales formados.</h2>
+        <p class="body-copy" data-reveal>Entre formaciones grupales e individuales. Como formador de academias y en formaciones propias, para profesionales y para quien está empezando.</p>
+      </div>
+    </div>
+
+    <div class="form-intro">
+      <div class="form-photos">
+        <figure class="media" data-img><img src="assets/img/formacion-movil-sm.webp" srcset="assets/img/formacion-movil-sm.webp 800w, assets/img/formacion-movil.webp 1290w" sizes="(max-width:899px) 55vw, 28vw" alt="Nene revisando con el móvil el trabajo de un alumno durante una formación" loading="lazy" decoding="async" width="800" height="1031"></figure>
+        <figure class="media" data-img><img src="assets/img/formacion-sonrisa-sm.webp" srcset="assets/img/formacion-sonrisa-sm.webp 800w, assets/img/formacion-sonrisa.webp 1290w" sizes="(max-width:899px) 45vw, 22vw" alt="Nene sonriendo con acreditación durante un evento de formación" loading="lazy" decoding="async" width="800" height="999"></figure>
+      </div>
+      <div class="form-text">
+        <p class="lead" data-reveal>Cada formación parte de un objetivo claro y un enfoque definido. Pero también de <em class="serif accent">disfrutar del proceso.</em></p>
+        <p class="body-copy" data-reveal>Equivocarse forma parte de aprender. Y aprender, en este oficio, también significa respetar la competición y a quienes compiten.</p>
+        <ul class="valores" data-reveal>
+          <li>Objetivo</li><li>Enfoque</li><li>Disfrutar</li><li>Equivocarse</li><li>Aprender</li><li>Respeto</li>
+        </ul>
+        <div class="para-quien" data-reveal>
+          <div><b>Profesionales</b><span>Para perfeccionar técnica, criterio y ejecución.</span></div>
+          <div><b>Quien empieza</b><span>Para construir una base sólida desde el primer día.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-types">
+      <article class="ftype" data-reveal>
+        <span class="mono">Formato 01</span>
+        <div>
+          <h3>Formaciones grupales</h3>
+          <p>Sesiones en grupo, en academias o en formato propio. Técnica compartida, ritmo de equipo y aprendizaje entre compañeros.</p>
+          <a class="btn btn--sm" href="#proximas-formaciones">Ver próximas fechas</a>
+        </div>
+      </article>
+      <article class="ftype" data-reveal style="--d:.1s">
+        <span class="mono">Formato 02</span>
+        <div>
+          <h3>Formaciones individuales</h3>
+          <p>Uno a uno, adaptadas a tu nivel y a tu objetivo. Toda la atención puesta en tu forma de trabajar.</p>
+          <a class="btn btn--sm" href="https://instagram.com/nenebarber7" target="_blank" rel="noopener">Consultar disponibilidad</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================= 06 · PRÓXIMAS FORMACIONES (se rellena desde assets/js/content.js) -->
+<section class="section" id="proximas-formaciones" data-theme-section="dark2">
+  <div class="wrap">
+    <div class="section-head prox-head">
+      <div style="display:grid;gap:28px">
+        <span class="eyebrow" data-reveal>06 — Agenda</span>
+        <h2 class="display h-lg" data-split>Próximas formaciones.</h2>
+      </div>
+      <p class="body-copy" data-reveal style="max-width:34ch">Plazas limitadas. Reserva tu sitio o escríbenos para recibir toda la información.</p>
+    </div>
+    <div class="prox-grid" id="formaciones-grid"></div>
+    <noscript><p class="body-copy">Consulta las próximas formaciones en <a href="https://instagram.com/nenebarber7">Instagram @nenebarber7</a>.</p></noscript>
+  </div>
+</section>
+
+<!-- ================================================================= 07 · TRABAJOS -->
+<section class="section" id="trabajos" data-theme-section="dark">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-reveal>07 — Trabajos</span>
+      <h2 class="display h-lg" data-split>Cada corte, <span class="serif accent" style="text-transform:none">una firma.</span></h2>
+    </div>
+
+    <div class="works" id="works">
+      <figure class="work w1" data-img tabindex="0"><img src="assets/img/corte-01-sm.webp" data-full="assets/img/corte-01.webp" alt="Nene trabajando el degradado de un cliente con máquina" loading="lazy" decoding="async" width="800" height="1200"><figcaption><span>Proceso</span><span>01</span></figcaption></figure>
+      <figure class="work w2" data-img tabindex="0"><img src="assets/img/ig-cortes-01.webp" data-full="assets/img/ig-cortes-01.webp" alt="Corte con degradado bajo y textura rizada" loading="lazy" decoding="async" width="660" height="763"><figcaption><span>Textura</span><span>02</span></figcaption></figure>
+      <figure class="work w3" data-img tabindex="0"><img src="assets/img/ig-cortes-04.webp" data-full="assets/img/ig-cortes-04.webp" alt="Corte con volumen y textura en la parte superior, vista de perfil" loading="lazy" decoding="async" width="660" height="728"><figcaption><span>Volumen</span><span>03</span></figcaption></figure>
+      <figure class="work w4" data-img tabindex="0"><img src="assets/img/ig-cortes-02.webp" data-full="assets/img/ig-cortes-02.webp" alt="Degradado limpio visto de perfil" loading="lazy" decoding="async" width="660" height="733"><figcaption><span>Fade</span><span>04</span></figcaption></figure>
+      <figure class="work w5" data-img tabindex="0"><img src="assets/img/corte-03-sm.webp" data-full="assets/img/corte-03.webp" alt="Nene perfilando con máquina el corte de un cliente" loading="lazy" decoding="async" width="800" height="1200"><figcaption><span>Detalle</span><span>05</span></figcaption></figure>
+      <figure class="work w6" data-img tabindex="0"><img src="assets/img/ig-cortes-03.webp" data-full="assets/img/ig-cortes-03.webp" alt="Degradado con transición limpia, vista lateral" loading="lazy" decoding="async" width="660" height="726"><figcaption><span>Estructura</span><span>06</span></figcaption></figure>
+      <figure class="work w7 w-extra" data-img tabindex="0"><img src="assets/img/nene-tijera-sm.webp" data-full="assets/img/nene-tijera.webp" alt="Trabajo de tijera sobre peine en la parte superior de un corte" loading="lazy" decoding="async" width="800" height="1200"><figcaption><span>Tijera</span><span>07</span></figcaption></figure>
+      <figure class="work w8 w-extra" data-img tabindex="0"><img src="assets/img/sala-cliente-sm.webp" data-full="assets/img/sala-cliente.webp" alt="Cliente con corte mullet terminado, sentado en el salón" loading="lazy" decoding="async" width="800" height="1067"><figcaption><span>Mullet</span><span>08</span></figcaption></figure>
+      <figure class="work w9 w-extra" data-img tabindex="0"><img src="assets/img/ig-cortes-05.webp" data-full="assets/img/ig-cortes-05.webp" alt="Acabado con máquina en la nuca" loading="lazy" decoding="async" width="662" height="724"><figcaption><span>Acabado</span><span>09</span></figcaption></figure>
+      <figure class="work w10 w-extra" data-img tabindex="0"><img src="assets/img/ig-cortes-06.webp" data-full="assets/img/ig-cortes-06.webp" alt="Marcando la raya con peine durante el corte" loading="lazy" decoding="async" width="660" height="726"><figcaption><span>Peinado</span><span>10</span></figcaption></figure>
+    </div>
+
+    <div class="works-end" data-reveal>
+      <p>¿Tu próximo corte? <span class="serif accent">Empieza aquí.</span></p>
+      <a class="btn" href="https://clientes.iabeauty.ai/peluqueria/69a5ecde0d3faa74a1a619bf" target="_blank" rel="noopener" data-book>Reservar cita
+        <svg class="arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================= 08 · TÉCNICA -->
+<section class="section" id="tecnica" data-theme-section="light">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-reveal>08 — La técnica</span>
+      <h2 class="display h-lg" data-split>El corte empieza mirando.</h2>
+    </div>
+    <div class="tec">
+      <div class="tec-visual" aria-hidden="true">
+        <div class="media grain">
+          <img class="is-active" src="assets/img/ig-cortes-02.webp" alt="" loading="lazy">
+          <img src="assets/img/ig-cortes-03.webp" alt="" loading="lazy">
+          <img src="assets/img/ig-cortes-04.webp" alt="" loading="lazy">
+          <img src="assets/img/nene-tijera-sm.webp" alt="" loading="lazy">
+          <img src="assets/img/ig-cortes-06.webp" alt="" loading="lazy">
+          <img src="assets/img/corte-02-sm.webp" alt="" loading="lazy">
+          <img src="assets/img/ig-cortes-01.webp" alt="" loading="lazy">
+        </div>
+        <span class="tec-counter"><span id="tec-n">01</span> / 07</span>
+      </div>
+      <ol class="tec-list">
+        <li class="tec-item is-active"><span class="mono">01</span><h3>Análisis del rostro</h3><p>Facciones, proporciones y cómo crece el pelo. Antes de coger la máquina, se estudia a la persona.</p>
+          <figure class="tec-mobile-img media"><img src="assets/img/ig-cortes-02.webp" alt="Perfil de un cliente con degradado" loading="lazy"></figure></li>
+        <li class="tec-item"><span class="mono">02</span><h3>Estructura</h3><p>La base que sostiene el corte: líneas y volúmenes pensados para que funcionen también cuando el pelo crece.</p>
+          <figure class="tec-mobile-img media"><img src="assets/img/ig-cortes-03.webp" alt="Estructura de un degradado visto de lado" loading="lazy"></figure></li>
+        <li class="tec-item"><span class="mono">03</span><h3>Textura</h3><p>Movimiento, peso y acabado en la parte superior. La diferencia entre un corte correcto y uno con carácter.</p>
+          <figure class="tec-mobile-img media"><img src="assets/img/ig-cortes-04.webp" alt="Corte con textura marcada en la parte superior" loading="lazy"></figure></li>
+        <li class="tec-item"><span class="mono">04</span><h3>Técnica</h3><p>Tijera, máquina y navaja, cada una en su momento. Precisión en cada paso de la ejecución.</p>
+          <figure class="tec-mobile-img media"><img src="assets/img/nene-tijera-sm.webp" alt="Trabajo de tijera sobre peine" loading="lazy"></figure></li>
+        <li class="tec-item"><span class="mono">05</span><h3>Peinado</h3><p>El acabado forma parte del corte: cómo se peina, cómo cae y cómo se mantiene en el día a día.</p>
+          <figure class="tec-mobile-img media"><img src="assets/img/ig-cortes-06.webp" alt="Marcando la raya con peine" loading="lazy"></figure></li>
+        <li class="tec-item"><span class="mono">06</span><h3>Adaptación</h3><p>Cada cabeza es distinta. El corte se adapta a la persona, a su estilo y a su rutina, no al revés.</p>
+          <figure class="tec-mobile-img media"><img src="assets/img/corte-02-sm.webp" alt="Nene adaptando el corte durante el servicio" loading="lazy"></figure></li>
+        <li class="tec-item"><span class="mono">07</span><h3>Versatilidad</h3><p>Capacidad para resolver distintos tipos de trabajo, del corte más clásico al más actual.</p>
+          <figure class="tec-mobile-img media"><img src="assets/img/ig-cortes-01.webp" alt="Corte con textura rizada y degradado" loading="lazy"></figure></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================= 09 · JURADO Y EVENTOS -->
+<section class="section jurado" id="jurado" data-theme-section="dark">
+  <div class="jurado-bg" aria-hidden="true">
+    <video muted loop playsinline preload="none" poster="assets/img/poster-evento-escenario.jpg" data-autoplay>
+      <source src="assets/video/evento-escenario.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="wrap">
+    <div class="jurado-grid">
+      <div class="jurado-title">
+        <span class="eyebrow" data-reveal>09 — Jurado y eventos</span>
+        <h2 class="display" data-split style="margin-top:28px">Desde el otro lado <span class="serif">de la mesa.</span></h2>
+      </div>
+      <div class="jurado-intro">
+        <p class="lead" data-reveal>Nene ha sido jurado en distintas batallas de barbería y eventos del sector.</p>
+        <p class="body-copy" data-reveal>Su criterio parte de una idea: valorar cómo trabaja un profesional en condiciones que no siempre son las de su propio salón.</p>
+      </div>
+
+      <figure class="jurado-photo media" data-img>
+        <img src="assets/img/jurado-expo.webp" alt="Nene como miembro del jurado en la mesa de una batalla de barbería" loading="lazy" decoding="async" width="900" height="1600">
+      </figure>
+
+      <div class="jurado-crit">
+        <span class="crit-label">Qué valora como jurado</span>
+        <ol class="crit">
+          <li data-reveal><span class="mono">01</span><b>Destrezas</b></li>
+          <li data-reveal style="--d:.06s"><span class="mono">02</span><b>Organización</b></li>
+          <li data-reveal style="--d:.12s"><span class="mono">03</span><b>Limpieza</b></li>
+          <li data-reveal style="--d:.18s"><span class="mono">04</span><b>Capacidad técnica</b></li>
+          <li data-reveal style="--d:.24s"><span class="mono">05</span><b>Ejecución</b></li>
+        </ol>
+        <blockquote class="jurado-quote" data-reveal>
+          <p>«La presión es un privilegio. No todos tienen la oportunidad de salir ahí y demostrar de qué son capaces.»</p>
+          <cite>— Nene</cite>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================= 10 · EQUIPO -->
+<section class="section" id="equipo" data-theme-section="light">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-reveal>10 — El equipo</span>
+      <h2 class="display h-lg" data-split>Cinco sillas. Un mismo criterio.</h2>
+      <p class="lead" data-reveal>Para Nene no son trabajadores: son compañeros. Comparten salón, herramientas y la misma forma de entender el oficio.</p>
+    </div>
+
+    <div class="team-grid">
+      <article class="member member--lead" data-reveal>
+        <figure class="media" data-img><img src="assets/img/corte-02-sm.webp" srcset="assets/img/corte-02-sm.webp 800w, assets/img/corte-02.webp 1600w" sizes="(max-width:899px) 100vw, 40vw" alt="Nene, fundador de NENEBARBER7, trabajando en el salón" loading="lazy" decoding="async" width="800" height="1200"></figure>
+        <div class="member-info"><div><h3>Nene</h3><p>Barbero, formador y jurado. Fundador de NENEBARBER7.</p></div><span class="mono">Fundador</span></div>
+      </article>
+
+      <!-- COMPAÑEROS: sustituir .ph por <img> con la foto real, y rellenar nombre, rol y descripción -->
+      <article class="member" data-reveal style="--d:.05s">
+        <figure class="media"><div class="ph"><span class="tbd">Foto pendiente</span><svg aria-hidden="true" viewBox="22 2 380 182"><use href="assets/img/sprite.svg#firma"></use></svg></div></figure>
+        <div class="member-info"><div><h3>Compañero 01</h3><p>Nombre y especialidad pendientes de confirmar.</p></div><span class="mono">Rol</span></div>
+      </article>
+      <article class="member" data-reveal style="--d:.1s">
+        <figure class="media"><div class="ph"><span class="tbd">Foto pendiente</span><svg aria-hidden="true" viewBox="22 2 380 182"><use href="assets/img/sprite.svg#firma"></use></svg></div></figure>
+        <div class="member-info"><div><h3>Compañero 02</h3><p>Nombre y especialidad pendientes de confirmar.</p></div><span class="mono">Rol</span></div>
+      </article>
+      <article class="member" data-reveal style="--d:.15s">
+        <figure class="media"><div class="ph"><span class="tbd">Foto pendiente</span><svg aria-hidden="true" viewBox="22 2 380 182"><use href="assets/img/sprite.svg#firma"></use></svg></div></figure>
+        <div class="member-info"><div><h3>Compañero 03</h3><p>Nombre y especialidad pendientes de confirmar.</p></div><span class="mono">Rol</span></div>
+      </article>
+      <article class="member" data-reveal style="--d:.2s">
+        <figure class="media"><div class="ph"><span class="tbd">Foto pendiente</span><svg aria-hidden="true" viewBox="22 2 380 182"><use href="assets/img/sprite.svg#firma"></use></svg></div></figure>
+        <div class="member-info"><div><h3>Compañero 04</h3><p>Nombre y especialidad pendientes de confirmar.</p></div><span class="mono">Rol</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================= 11 · EL ESPACIO -->
+<section id="espacio" data-theme-section="dark" aria-labelledby="espacio-title">
+  <div class="espacio-enter" data-espacio>
+    <div class="espacio-sticky">
+      <div class="espacio-frame">
+        <img src="assets/img/sala-luz.webp" srcset="assets/img/sala-luz-sm.webp 800w, assets/img/sala-luz.webp 1600w" sizes="100vw" alt="Sala del salón NENEBARBER7 con sillones de barbero, focos y pared de chapa" loading="lazy" decoding="async" width="1600" height="2400">
+      </div>
+      <div class="espacio-word">
+        <span class="display">Entra.</span>
+        <span class="serif">Así es el salón por dentro.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="espacio-grid">
+        <figure class="eg eg-1 media" data-img><span class="eg-label">Ambiente</span>
+          <video muted loop playsinline preload="none" poster="assets/img/poster-salon-luces.jpg" data-autoplay aria-label="Iluminación del salón"><source src="assets/video/salon-luces.mp4" type="video/mp4"></video></figure>
+        <figure class="eg eg-2 media" data-img><span class="eg-label">Herramientas</span><img src="assets/img/carro-herramientas-sm.webp" alt="Carro de herramientas ordenado junto a una planta" loading="lazy" decoding="async" width="800" height="1067"></figure>
+        <figure class="eg eg-3 media" data-img><span class="eg-label">Interior</span><img src="assets/img/ig-studio-01.webp" alt="Sillón de barbero vacío junto a pared de chapa" loading="lazy" decoding="async" width="660" height="733"></figure>
+        <figure class="eg eg-4 media" data-img><span class="eg-label">Clientes</span><img src="assets/img/sala-cliente-sm.webp" alt="Cliente sentado en el sillón frente al espejo" loading="lazy" decoding="async" width="800" height="1067"></figure>
+        <!-- FACHADA: sustituir el placeholder por la foto real del exterior -->
+        <figure class="eg eg-7 media" data-img><span class="eg-label">Fachada</span>
+          <div class="ph"><span class="tbd" style="top:auto;bottom:14px">Foto de fachada pendiente</span><svg aria-hidden="true" viewBox="22 2 380 182"><use href="assets/img/sprite.svg#firma"></use></svg></div></figure>
+      </div>
+
+      <div class="espacio-copy">
+        <h2 class="display" id="espacio-title" data-split>Hormigón, chapa y luz.</h2>
+        <p class="body-copy" data-reveal>El salón es parte de la marca. Un espacio ordenado y limpio, con zonas pensadas para trabajar con calma y para que el cliente se sienta cómodo desde el primer minuto.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================= 12 · MARCAS (se rellena desde assets/js/content.js) -->
+<section class="marcas" id="marcas" data-theme-section="light" aria-labelledby="marcas-title">
+  <div class="wrap marcas-head">
+    <div style="display:grid;gap:20px">
+      <span class="eyebrow" data-reveal>12 — Colaboraciones</span>
+      <h2 class="display h-md" id="marcas-title" data-split>Trabajamos con</h2>
+    </div>
+    <span class="tbd" id="marcas-tbd" hidden>Logos de ejemplo · pendientes de sustituir</span>
+  </div>
+  <div class="marquee" id="marquee" aria-label="Marcas con las que colabora NENEBARBER7">
+    <div class="marquee-track" id="marquee-track"></div>
+  </div>
+</section>
+
+<!-- ================================================================= 13 · RESERVA -->
+<section class="reserva" id="reservar" data-theme-section="violet" aria-labelledby="reserva-title">
+  <div class="wrap">
+    <span class="eyebrow" data-reveal>13 — Reserva</span>
+    <h2 class="reserva-title display" id="reserva-title" data-split style="margin-top:24px">Tu silla <span class="serif">te espera.</span></h2>
+    <div class="reserva-bottom">
+      <div class="horario" data-reveal>
+        <span class="mono">Horario · Lunes a viernes</span>
+        <div class="horario-row"><b>09:00 — 14:00</b><b>16:00 — 20:00</b></div>
+      </div>
+      <a class="btn" href="https://clientes.iabeauty.ai/peluqueria/69a5ecde0d3faa74a1a619bf" target="_blank" rel="noopener" data-book data-reveal>Reservar cita con NENEBARBER7
+        <svg class="arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================= 14 · CONTACTO -->
+<section class="contacto" id="contacto" data-theme-section="dark" aria-labelledby="contacto-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-reveal>14 — Contacto</span>
+      <h2 class="display h-lg" id="contacto-title" data-split>Hablemos.</h2>
+    </div>
+    <div class="contacto-grid">
+      <div class="cbox" data-reveal><span class="mono">Horario</span><p class="cbox-v">Lunes a viernes<br>09:00 — 14:00<br>16:00 — 20:00<small>Cita previa online</small></p></div>
+      <div class="cbox" data-reveal style="--d:.06s"><span class="mono">Reservas</span><p class="cbox-v"><a href="https://clientes.iabeauty.ai/peluqueria/69a5ecde0d3faa74a1a619bf" target="_blank" rel="noopener" class="link-u" data-book>Reserva online →</a><small>Citas con NENEBARBER7</small></p></div>
+      <div class="cbox" data-reveal style="--d:.12s"><span class="mono">Redes</span><p class="cbox-v"><a href="https://instagram.com/nenebarber7" target="_blank" rel="noopener" class="link-u">Instagram<br>@nenebarber7</a><small>Formaciones y consultas por mensaje directo</small></p></div>
+      <div class="cbox" data-reveal style="--d:.18s"><span class="mono">Ubicación</span><p class="cbox-v">Aracena<br>Huelva<small>Dirección exacta pendiente de añadir</small></p></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================================================================= FOOTER -->
+<footer class="footer" data-theme-section="dark">
+  <div class="wrap">
+    <div class="footer-firma" data-reveal aria-hidden="true"><svg viewBox="20 0 385 224"><use href="assets/img/sprite.svg#logo"></use></svg></div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> NENEBARBER7 · Aracena, Huelva</span>
+      <nav class="footer-links" aria-label="Enlaces legales y redes">
+        <a href="https://clientes.iabeauty.ai/peluqueria/69a5ecde0d3faa74a1a619bf" target="_blank" rel="noopener" data-book>Reservar cita</a>
+        <a href="https://instagram.com/nenebarber7" target="_blank" rel="noopener">Instagram</a>
+        <a href="aviso-legal.html">Aviso legal</a>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="cookies.html">Cookies</a>
+        <button type="button" data-cookie-settings>Configurar cookies</button>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<!-- CTA fija en móvil -->
+<div class="mcta" id="mcta">
+  <span>Lun—Vie<br>09—14 · 16—20</span>
+  <a class="btn" href="https://clientes.iabeauty.ai/peluqueria/69a5ecde0d3faa74a1a619bf" target="_blank" rel="noopener" data-book>Reservar cita</a>
+</div>
+
+<!-- Lightbox galería -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Galería de trabajos" hidden>
+  <button class="lb-close" type="button" data-lb-close>Cerrar ✕</button>
+  <button class="lb-nav lb-prev" type="button" data-lb-prev aria-label="Anterior">←</button>
+  <img src="" alt="">
+  <button class="lb-nav lb-next" type="button" data-lb-next aria-label="Siguiente">→</button>
+  <span class="lb-count"></span>
+</div>
+
+<!-- Consentimiento de cookies -->
+<div class="cookie" id="cookie" role="dialog" aria-live="polite" aria-label="Preferencias de cookies" hidden>
+  <h2>Cookies</h2>
+  <p>Usamos únicamente almacenamiento técnico necesario para que la web funcione y recordar tu elección. No instalamos cookies de análisis ni de publicidad. <a href="cookies.html">Política de cookies</a>.</p>
+  <div class="cookie-prefs">
+    <div class="cpref"><div><b>Necesarias</b><small>Imprescindibles para el funcionamiento. Siempre activas.</small></div><label class="switch"><input type="checkbox" checked disabled><i></i><span class="sr-only">Necesarias</span></label></div>
+    <div class="cpref"><div><b>Analíticas</b><small>Actualmente no se utilizan.</small></div><label class="switch"><input type="checkbox" data-consent="analytics"><i></i><span class="sr-only">Analíticas</span></label></div>
+    <div class="cpref"><div><b>Marketing</b><small>Actualmente no se utilizan.</small></div><label class="switch"><input type="checkbox" data-consent="marketing"><i></i><span class="sr-only">Marketing</span></label></div>
+  </div>
+  <div class="cookie-actions">
+    <button class="btn" type="button" data-consent-accept>Aceptar</button>
+    <button class="btn btn--ghost" type="button" data-consent-reject>Rechazar</button>
+    <button class="btn btn--ghost" type="button" data-consent-config>Configurar</button>
+  </div>
+</div>
+
+<script src="assets/js/content.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lenis/1.1.13/lenis.min.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
