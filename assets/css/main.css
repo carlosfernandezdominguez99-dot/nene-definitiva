@@ -485,15 +485,15 @@ body[data-theme="violet"] .btn:hover { color: var(--ink); }
 .stat-l { font-family: var(--f-mono); font-size: 11.5px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-top: 14px; max-width: 22ch; }
 
 /* ================================================================= FORMACIÓN */
-.form-hero { display: grid; grid-template-columns: repeat(12, 1fr); gap: 0 var(--gutter); align-items: end; }
+.form-hero { display: grid; grid-template-columns: repeat(12, 1fr); gap: 0 var(--gutter); align-items: center; }
 .form-big {
   grid-column: 1 / span 7; font-family: var(--f-display); font-weight: 900;
-  font-size: clamp(140px, 24vw, 420px); line-height: .74; letter-spacing: -.04em;
+  font-size: clamp(120px, 19vw, 330px); line-height: .8; letter-spacing: -.04em; margin: 0;
 }
 .form-big .plus { color: var(--accent); }
-.form-big-l { grid-column: 8 / span 5; padding-bottom: 2vw; }
+.form-big-l { grid-column: 8 / span 5; }
 .form-big-l h2 { font-size: clamp(40px, 4.4vw, 76px); margin-bottom: 22px; }
-.form-intro { display: grid; grid-template-columns: repeat(12, 1fr); gap: 40px var(--gutter); margin-top: clamp(48px, 6vw, 96px); align-items: start; }
+.form-intro { display: grid; grid-template-columns: repeat(12, 1fr); gap: 40px var(--gutter); margin-top: clamp(32px, 4vw, 64px); align-items: start; }
 .form-photos { grid-column: 1 / span 6; display: grid; grid-template-columns: 1.25fr 1fr; gap: 14px; align-items: start; }
 .form-photos .media:first-child { aspect-ratio: 4 / 5.2; }
 .form-photos .media:last-child { aspect-ratio: 4 / 5; margin-top: 30%; }
@@ -772,8 +772,7 @@ body[data-theme="violet"] .btn:hover { color: var(--ink); }
 
 
 /* ================================================================= SECCIONES DIFERENCIADAS
-   Cada apartado tiene su propio fondo y entra como una "lámina" con esquinas
-   redondeadas que se superpone al anterior: el cambio de sección se ve claro. */
+   Cada apartado tiene su propio fondo plano: el cambio de sección se ve claro. */
 [data-theme-section] { position: relative; background: var(--bg); color: var(--fg); }
 [data-theme-section="dark"] {
   --bg: var(--ink); --fg: var(--paper); --muted: rgba(243,241,237,.58); --line: rgba(243,241,237,.14); --accent: var(--lilac);
@@ -790,12 +789,7 @@ body[data-theme="violet"] .btn:hover { color: var(--ink); }
 [data-theme-section="violet"] .btn { --b-bg: var(--ink); --b-fg: #fff; }
 [data-theme-section="violet"] .btn::before { background: #fff; }
 [data-theme-section="violet"] .btn:hover { color: var(--ink); }
-:root { --sheet-r: clamp(22px, 3vw, 44px); }
-main > [data-theme-section]:not(.hero) {
-  border-radius: var(--sheet-r) var(--sheet-r) 0 0;
-  margin-top: calc(-1 * var(--sheet-r));
-  box-shadow: 0 -18px 40px rgba(0,0,0,.18);
-}
+/* Cortes planos entre secciones: cada una con su propio fondo, sin esquinas ni sombras */
 .footer { margin-top: 0; }
 
 /* Cabecera de sección: índice + nombre + línea a todo el ancho */
