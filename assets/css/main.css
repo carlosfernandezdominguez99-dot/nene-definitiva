@@ -297,7 +297,7 @@ body[data-theme="violet"] .btn:hover { color: var(--ink); }
 .hero-media { position: absolute; inset: 0; }
 .hero-media .media { position: absolute; inset: 0; background: var(--ink); }
 .hero-media img {
-  object-position: 50% 30%;
+  object-position: 60% 30%;
   transform: scale(1.14);
   animation: heroIn 2.6s var(--ease) .1s forwards, heroDrift 22s ease-in-out 2.7s infinite alternate;
 }
@@ -351,6 +351,18 @@ body[data-theme="violet"] .btn:hover { color: var(--ink); }
 .scroll-cue i { width: 1px; height: 64px; background: rgba(255,255,255,.25); position: relative; overflow: hidden; }
 .scroll-cue i::after { content: ""; position: absolute; left: 0; top: -40%; width: 1px; height: 40%; background: #fff; animation: cue 2.2s var(--ease-io) infinite; }
 @keyframes cue { to { top: 110%; } }
+
+/* Escritorio: la foto ocupa la parte derecha del hero, entera y sin recortar la cara */
+@media (min-width: 900px) {
+  .hero-media { left: 38%; }
+  .hero-top { justify-content: flex-start; gap: 56px; }
+  .hero-firma { order: -1; }
+  .hero-media::after {
+    background:
+      linear-gradient(90deg, var(--ink) 0%, rgba(11,11,12,.55) 22%, rgba(11,11,12,0) 50%),
+      linear-gradient(180deg, rgba(11,11,12,.45) 0%, rgba(11,11,12,0) 25%, rgba(11,11,12,0) 55%, rgba(11,11,12,.9) 100%);
+  }
+}
 
 /* Entrada del hero */
 .hero [data-hero] { opacity: 0; transform: translateY(24px); animation: up 1.2s var(--ease) forwards; animation-delay: var(--d, .6s); }
@@ -868,7 +880,7 @@ html.gate-ok .gate { display: none; }
   .nav-logo span { display: none; }
   .scroll-cue { display: none; }
   .hero { height: auto; min-height: 100svh; }
-  .hero-media img { object-position: 60% 30%; }
+  .hero-media img { object-position: 62% 30%; }
   .hero-top { top: calc(var(--nav-h) + 18px); }
   .hero-roles { display: none; }
   .hero-firma { width: 140px; margin-left: auto; }
