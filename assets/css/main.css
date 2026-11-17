@@ -557,6 +557,22 @@ body[data-theme="violet"] .btn:hover { color: var(--ink); }
 .fcard-meta dt { font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
 .fcard-meta dd { margin: 4px 0 0; font-size: 14.5px; }
 .fcard-ctas { display: flex; gap: 8px; flex-wrap: wrap; }
+.fcard-date--tbd { flex-direction: column; align-items: flex-start; gap: 6px; }
+.fcard-soon { font-family: var(--f-display); font-weight: 900; text-transform: uppercase; font-size: clamp(44px, 4.4vw, 72px); line-height: .85; color: var(--accent); }
+.fcard-topics { display: flex; flex-wrap: wrap; gap: 8px; }
+.fcard-topics li { font-family: var(--f-mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; padding: 7px 12px; border-radius: 999px; box-shadow: inset 0 0 0 1px var(--line); }
+.fcard-topics li::before { content: "•"; color: var(--accent); margin-right: 8px; }
+/* Una sola formación: cartel + ficha */
+.prox-grid--single { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); align-items: stretch; }
+.prox-grid--single .fcard { min-height: 0; padding: clamp(26px, 3vw, 44px); }
+.prox-grid--single .fcard h3 { font-size: clamp(36px, 3.4vw, 56px); }
+.prox-grid--single .fcard p { font-size: 16.5px; max-width: 48ch; }
+.fposter { aspect-ratio: 4 / 5; margin: 0; }
+.fposter a { display: block; height: 100%; cursor: zoom-in; }
+.fposter img { transition: transform 1.2s var(--ease); }
+.fposter:hover img { transform: scale(1.03); }
+@media (max-width: 899px) { .prox-grid--single { grid-template-columns: 1fr; } }
+@media (max-width: 600px) { .prox-grid--single .fcard p { display: block; font-size: 15px; } .prox-grid--single .fcard-meta div:nth-child(n+3) { display: block; } }
 .prox-note { margin-top: 28px; color: var(--muted); font-size: 14px; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
 
 /* ================================================================= TRABAJOS */

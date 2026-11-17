@@ -30,44 +30,24 @@ window.NB = {
      ----------------------------------------------------------------------- */
   formaciones: [
     {
-      example: true,
-      type: "Grupal · Iniciación",
-      name: "Fundamentos del fade",
-      day: "18",
-      month: "Octubre",
-      year: "2026",
-      place: "Salón NENEBARBER7 · Aracena",
-      seats: "8 plazas",
-      duration: "Jornada completa",
-      text: "Para quien empieza: estructura, degradados limpios y el porqué de cada paso. Objetivo claro y mucha práctica.",
-      moreUrl: "",
-      bookUrl: ""
-    },
-    {
-      example: true,
-      type: "Individual · Profesional",
-      name: "Técnica y criterio 1:1",
-      day: "07",
-      month: "Noviembre",
-      year: "2026",
-      place: "Salón NENEBARBER7 · Aracena",
-      seats: "1 plaza",
-      duration: "Sesión personalizada",
-      text: "Uno a uno, sobre tu forma de trabajar: análisis, estructura, textura y acabado adaptados a tu nivel.",
-      moreUrl: "",
-      bookUrl: ""
-    },
-    {
-      example: true,
-      type: "Grupal · Competición",
-      name: "Preparación para batallas",
-      day: "12",
-      month: "Diciembre",
-      year: "2026",
-      place: "Por confirmar",
-      seats: "10 plazas",
-      duration: "2 días",
-      text: "Trabajar fuera de tu salón, con tiempo y bajo presión: organización, limpieza y ejecución, desde la mirada de un jurado.",
+      example: false,
+      type: "Masterclass · Exclusiva",
+      name: "Masterclass NENEBARBER7",
+      /* Fecha: dejar day vacío mientras esté "por determinar".
+         Cuando haya fecha: day: "18", month: "Enero", year: "2027" */
+      day: "",
+      month: "",
+      year: "",
+      place: "Barbería NeneBarber7 · Aracena",
+      seats: "Plazas limitadas",
+      duration: "Por confirmar",
+      text: "¿Quieres llevar tu carrera profesional al siguiente nivel? Una formación exclusiva impartida por Nene en su propio salón.",
+      topics: ["Técnicas de corte", "Styling", "Marketing", "Creación de contenido"],
+      /* Cartel (opcional): imagen vertical 4:5 */
+      poster: "assets/img/masterclass-cartel-sm.webp",
+      posterFull: "assets/img/masterclass-cartel.webp",
+      posterAlt: "Cartel de la masterclass exclusiva impartida por NENEBARBER7: técnicas de corte, styling, marketing y creación de contenido",
+      bookLabel: "Quiero plaza",
       moreUrl: "",
       bookUrl: ""
     }

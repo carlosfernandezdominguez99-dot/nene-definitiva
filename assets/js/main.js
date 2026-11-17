@@ -86,13 +86,21 @@
     var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
     var ig = NB.instagram || "#";
     var anyExample = false;
+    var single = NB.formaciones.length === 1;
+    grid.classList.toggle("prox-grid--single", single);
     grid.innerHTML = NB.formaciones.map(function (f, i) {
       if (f.example) anyExample = true;
-      return '<article class="fcard" data-reveal style="--d:' + (i * 0.08) + 's">' +
+      var date = f.day
+        ? '<div class="fcard-date"><span class="fcard-day">' + esc(f.day) + '</span><span class="fcard-month">' + esc(f.month) + '<br>' + esc(f.year) + '</span></div>'
+        : '<div class="fcard-date fcard-date--tbd"><span class="fcard-month">Fecha</span><span class="fcard-soon">Por determinar</span></div>';
+      var topics = (f.topics && f.topics.length)
+        ? '<ul class="fcard-topics">' + f.topics.map(function (t) { return '<li>' + esc(t) + '</li>'; }).join("") + '</ul>'
+        : '';
+      var card = '<article class="fcard" data-reveal style="--d:' + (i * 0.08) + 's">' +
         '<div class="fcard-top"><span class="fcard-type">' + esc(f.type) + '</span>' +
         (f.example ? '<span class="tbd">Contenido de ejemplo</span>' : '') + '</div>' +
-        '<div class="fcard-date"><span class="fcard-day">' + esc(f.day) + '</span><span class="fcard-month">' + esc(f.month) + '<br>' + esc(f.year) + '</span></div>' +
-        '<h3>' + esc(f.name) + '</h3><p>' + esc(f.text) + '</p>' +
+        date +
+        '<h3>' + esc(f.name) + '</h3><p>' + esc(f.text) + '</p>' + topics +
         '<dl class="fcard-meta">' +
           '<div><dt>Lugar</dt><dd>' + esc(f.place) + '</dd></div>' +
           '<div><dt>Plazas</dt><dd>' + esc(f.seats) + '</dd></div>' +
@@ -100,9 +108,15 @@
           '<div><dt>Duración</dt><dd>' + esc(f.duration) + '</dd></div>' +
         '</dl>' +
         '<div class="fcard-ctas">' +
-          '<a class="btn btn--sm" href="' + esc(f.bookUrl || ig) + '" target="_blank" rel="noopener">Reservar plaza</a>' +
+          '<a class="btn btn--sm" href="' + esc(f.bookUrl || ig) + '" target="_blank" rel="noopener">' + esc(f.bookLabel || "Reservar plaza") + '</a>' +
           '<a class="btn btn--sm btn--ghost" href="' + esc(f.moreUrl || ig) + '" target="_blank" rel="noopener">Más información</a>' +
         '</div></article>';
+      if (single && f.poster) {
+        card = '<figure class="fposter media" data-reveal><a href="' + esc(f.posterFull || f.poster) + '" target="_blank" rel="noopener" aria-label="Ver el cartel a tamaño completo">' +
+          '<img src="' + esc(f.poster) + '"' + (f.posterFull ? ' srcset="' + esc(f.poster) + ' 800w, ' + esc(f.posterFull) + ' 1200w" sizes="(max-width: 899px) 100vw, 40vw"' : '') +
+          ' alt="' + esc(f.posterAlt || f.name) + '" loading="lazy" decoding="async" width="800" height="1000"></a></figure>' + card;
+      }
+      return card;
     }).join("");
     if (anyExample) {
       var note = document.createElement("p");
