@@ -304,26 +304,6 @@
     frame.style.setProperty("--es", (1.25 - 0.25 * e).toFixed(3));
   }
 
-  /* ---------------------------------------------------------------- Técnica: imagen fija que cambia */
-  (function () {
-    var items = $$(".tec-item");
-    var imgs = $$(".tec-visual img");
-    var n = $("#tec-n");
-    if (!items.length || !imgs.length) return;
-    var set = function (i) {
-      items.forEach(function (it, k) { it.classList.toggle("is-active", k === i); });
-      imgs.forEach(function (im, k) { im.classList.toggle("is-active", k === i); });
-      if (n) n.textContent = ("0" + (i + 1)).slice(-2);
-    };
-    onScroll(function () {
-      if (!isDesktop()) return;
-      var mid = window.innerHeight * 0.5, idx = 0;
-      items.forEach(function (it, k) { if (it.getBoundingClientRect().top < mid) idx = k; });
-      set(idx);
-    });
-    items.forEach(function (it, k) { it.addEventListener("mouseenter", function () { if (isDesktop()) set(k); }); });
-  })();
-
   /* ---------------------------------------------------------------- Vídeos: solo se reproducen en pantalla */
   (function () {
     var vids = $$("video[data-autoplay]");

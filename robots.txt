@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nene-barber.vercel.app/sitemap.xml
+Sitemap: https://nenebarber7.es/sitemap.xml

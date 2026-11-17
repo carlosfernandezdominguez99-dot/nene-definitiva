@@ -35,21 +35,23 @@ tools/servidor-local.js → servidor para ver la web en local (no se usa en Verc
 | Logos de marcas                     | `assets/js/content.js` → `marcas` (SVG/PNG en `assets/img/marcas/`) |
 | Quitar la contraseña al publicar    | `assets/js/content.js` → `gate.enabled: false`                 |
 | Enlace de reservas                  | `assets/js/content.js` → `booking` (se aplica a todos los botones) |
-| Fotos y nombres del equipo          | `index.html` → sección `#equipo` (sustituir cada `.ph` por `<img>`) |
+| Fotos de la trayectoria             | `index.html` → sección `#trayectoria` (cada etapa lleva un comentario con el archivo a usar) |
+| Fotos, nombres e Instagram del equipo | `index.html` → sección `#equipo` (sustituir `.ph` por `<img>`, `[NOMBRE_COMPAÑERO_N]` y `USUARIO_N`) |
+| Datos legales del titular           | `aviso-legal.html`, `privacidad.html`, `cookies.html` → buscar `[` (marcados en morado) |
 | Foto de la fachada                  | `index.html` → sección `#espacio`, bloque "Fachada"            |
-| Dominio definitivo                  | Buscar `nene-barber.vercel.app` en `index.html`, `sitemap.xml`, `robots.txt` y páginas legales |
+| Dominio                             | `nenebarber7.es` (en `index.html`, `sitemap.xml`, `robots.txt` y páginas legales) |
 
 ## Pendiente de datos reales
 
 Todo lo que no venía confirmado en el briefing está marcado en la web con una etiqueta morada ("Foto pendiente", "Contenido de ejemplo", "Logo pendiente"…):
 
-- Nombres, roles, descripciones y fotos de los 4 compañeros del equipo.
+- Fotos de la trayectoria: cortes caseros, primeros cortes, primer sitio profesional, salón junto a la bodega y equipo al completo.
+- Nombre, foto e Instagram de los 4 compañeros del equipo.
 - Foto de la fachada.
 - Logos de las marcas con las que colabora.
 - Formaciones reales (las 3 actuales son ejemplos).
 - Dirección exacta del salón, email/teléfono de contacto.
 - Datos del titular (nombre/razón social, NIF, domicilio, email) para las páginas legales.
-- Dominio definitivo (ahora `nene-barber.vercel.app`).
 
 ## Notas técnicas
 
